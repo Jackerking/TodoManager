@@ -27,5 +27,8 @@ def main():
     else:
         print(f"Unknown command: {command}")
 
+    print("This is the cloned repository.")
+
+
 if __name__ == "__main__":
     main()
