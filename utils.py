@@ -11,3 +11,11 @@ def list_tasks():
         return []
     with open(TASKS_FILE, "r") as f:
         return f.read().splitlines()
+
+def mark_complete(task_number):
+    tasks = list_tasks()
+    if 0 < task_number <= len(tasks):
+        tasks[task_number - 1] += " [Done]"
+        with open(TASKS_FILE, "w") as f:
+            for task in tasks:
+                f.write(f"{task}\n")

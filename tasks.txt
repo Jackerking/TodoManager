@@ -1,2 +1,3 @@
 Complete Git homework
-Play sports with friends
+Play sports with friends [Done]
+eat fruit

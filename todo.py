@@ -1,5 +1,6 @@
 import sys
-from utils import add_task, list_tasks
+from utils import add_task, list_tasks, mark_complete
+
 
 def main():
     if len(sys.argv) < 2:
@@ -17,6 +18,12 @@ def main():
         print("Todo List:")
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
+
+    elif command == "done":
+        task_number = int(sys.argv[2])
+        mark_complete(task_number)
+        print(f"Task {task_number} marked as complete.")
+
     else:
         print(f"Unknown command: {command}")
 
