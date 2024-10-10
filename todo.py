@@ -28,7 +28,7 @@ def main():
         print(f"Unknown command: {command}")
 
     print("This is the cloned repository.")
-    print("This is the original repository.")
+    print("This is the original repository+PYCHARM.")
 
 
 if __name__ == "__main__":
